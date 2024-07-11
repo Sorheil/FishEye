@@ -1,0 +1,35 @@
+.skip-to-content {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--secondary-color-1);
+    transition: transform 0.3s ease;
+}
+
+.skip-to-content:focus {
+    transform: translateX(-50%) translateY(0);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+@media screen and (max-width:768px) {
+    .skip-to-content {
+        display: none;
+    }
+}

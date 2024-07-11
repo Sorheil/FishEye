@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo/FishEye.png" type="image/png">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Accueil</title>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Passer au contenu</a>
+
+    <header id="header">
+        <a href="./index.html"><img src="./assets/logo/FishEye.png" alt="Fisheye Home page" class="logo"></a>
+        <nav aria-label="photographer categories">
+            <ul class="nav__links"><li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span>Portrait</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span> Art</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span>Fashion</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span>Architecture</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span> Travel</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span> Sport</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span>Animals</a></li>
+                <li class="link"><a href="#" class="tag"><span aria-hidden="true">#</span><span class="sr-only">Tag</span> Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" aria-labelledby="photographers-title">
+        <h1 id="photographers-title">Nos photographes</h1>
+        <div class="photographers-wrapper">
+        </div>
+    </main>
+
+    <!-- api -->
+    <script src="./scripts/api/API.js"></script>
+    <!-- templates -->
+    <script src="./scripts/templates/PhotographerCard.js"></script>
+    <!-- models -->
+    <script src="./scripts/models/Photographer.js"></script>
+    <!-- components -->
+    <script src="./scripts/components/PhotographerComponent.js"></script>
+    <!-- main script -->
+    <script src="./scripts/pages/index.js"></script>
+</body>
+
+</html>

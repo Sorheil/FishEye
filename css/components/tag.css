@@ -1,0 +1,19 @@
+.tag {
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 11px;
+    border: 0.5px solid var(--secondary-text-color-1);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--secondary-text-color-2);
+}
+
+.tag:hover,
+.tag:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-2);
+}

@@ -1,0 +1,64 @@
+.photographer-card {
+    max-width: 263px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: DM Sans;
+    text-align: center;
+    font-weight: 400;
+}
+
+.photographer__portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.photographer__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.photographer__name {
+    font-size: 36px;
+    line-height: 46.87px;
+    white-space: nowrap;
+    color: var(--secondary-color-1);
+
+}
+
+.photographer__description {
+    margin-bottom: 10px;
+}
+
+.photographer__description .city {
+    font-size: 13px;
+    line-height: 16.93px;
+    text-align: center;
+    color: var(--secondary-color-1);
+
+}
+
+.photographer__description .tagline {
+    font-size: 10px;
+    line-height: 13.02px;
+}
+
+.photographer__description .price {
+    font-size: 9px;
+    line-height: 11.72px;
+    color: var(--secondary-text-color-1);
+}
+
+.photographer__tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 5px;
+}
