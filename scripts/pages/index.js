@@ -20,7 +20,7 @@ function createPhotographersComponents(photographers) {
 
 function insertPhotographers(wrapper, photographersComponent) {
     photographersComponent.forEach(photographerComponent => {
-        wrapper.appendChild(photographerComponent._photographerHTML);
+        wrapper.appendChild(photographerComponent._HTML);
         photographerComponent.addEvent();
     });
 }

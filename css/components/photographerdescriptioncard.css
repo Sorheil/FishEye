@@ -1,0 +1,44 @@
+.photographer-description {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color-2);
+    font-weight: 400;
+    font-family: DM Sans;
+    padding: 60px 40px;
+}
+
+.photographer__image--minified {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photographer-description .name {
+    font-size: 64px;
+    line-height: 83.33px;
+    text-align: left;
+    color: var(--primary-text-color);
+}
+
+.photographer-description .city {
+    font-size: 24px;
+    line-height: 31.25px;
+    text-align: left;
+    color: var(--secondary-text-color-2);
+
+}
+
+.photographer-description .tagline {
+    font-size: 18px;
+    line-height: 50.44px;
+    text-align: left;
+    color: #525252;
+
+}
+
+.photographer-description__details {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+}

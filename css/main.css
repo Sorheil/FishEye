@@ -3,6 +3,9 @@
 @import "./components/accessibility.css";
 @import "./components/photographer.css";
 @import "./components/tag.css";
+@import "./components/btn-cta.css";
+@import"./components/photographerdescriptioncard.css";
+@import"./components/mediacard.css";
 
 /*header*/
 header {
@@ -20,6 +23,12 @@ header {
     height: 50px;
 }
 
+.header--minified {
+    position: static;
+    padding: 43px 100px;
+
+}
+
 .nav__links {
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +37,10 @@ header {
 }
 
 /* main*/
+.main__photographer-page {
+    padding: 0px 100px;
+}
+
 main h1 {
     position: absolute;
     right: 0;
@@ -47,6 +60,22 @@ main h1 {
     padding: 202px 72px 60px;
     row-gap: 50px;
 }
+
+.media-card-wrapper {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    padding: 70px 0px;
+}
+
+
+/*style for photographe page */
+/* main*/
+.main__photographer-page {
+    padding: 0px 100px;
+}
+
 
 @media screen and (max-width:767px) {
 
