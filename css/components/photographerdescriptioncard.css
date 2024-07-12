@@ -41,4 +41,33 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px;
+    row-gap: 5px;
+}
+
+@media screen and (max-width:768px) {
+
+    .photographer-description {
+        background-color: white;
+        padding: 0px;
+    }
+
+    .photographer__image--minified {
+        width: 100px;
+        height: 100px;
+    }
+
+    .photographer-description .name {
+        font-size: 36px;
+        line-height: 46.87px;
+    }
+
+    .photographer-description .city,
+    .photographer-description .tagline {
+        font-size: 16px;
+        line-height: 16.93px;
+
+
+    }
+
+
 }

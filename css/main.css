@@ -23,7 +23,7 @@ header {
     height: 50px;
 }
 
-.header--minified {
+.header--photographer-page {
     position: static;
     padding: 43px 100px;
 
@@ -52,6 +52,8 @@ main h1 {
 }
 
 /*section photographer*/
+
+
 .photographers-wrapper {
     display: grid;
     width: 100%;
@@ -113,10 +115,23 @@ main h1 {
     }
 
     /*section photograher*/
+    .header--photographer-page {
+        position: static;
+        padding: 40px 20px;
+    
+    }
     .photographers-wrapper {
-        justify-content: center;
         grid-template-columns: repeat(1, auto);
-        padding: 225px 88px 60px;
-        column-gap: 20px;
+        row-gap: 5px;
+    }
+
+    /* page photographer */
+    .main__photographer-page {
+        padding: 0px 20px;
+    }
+
+    .media-card-wrapper {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
     }
 }

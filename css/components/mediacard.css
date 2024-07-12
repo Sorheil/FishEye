@@ -24,7 +24,21 @@
     align-items: center;
 }
 
+.media-card__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 100px);
+}
+
+
 .media-card .unliked {
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 2px var(--secondary-text-color-2);
+}
+
+@media screen and (max-width:768px) {
+    .media-card {
+        width: 100%;
+    }
 }
