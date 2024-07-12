@@ -123,6 +123,7 @@ main h1 {
     .photographers-wrapper {
         grid-template-columns: repeat(1, auto);
         row-gap: 5px;
+        justify-content: center;
     }
 
     /* page photographer */
