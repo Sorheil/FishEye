@@ -6,6 +6,5 @@ class PhotographerDescriptionComponent {
         this.addEvent()
     }
     addEvent() {
-        console.log(" photographerComponent load event")
     }
 }

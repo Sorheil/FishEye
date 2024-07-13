@@ -5,6 +5,5 @@ class PhotographerComponent {
         this._HTML = photographerCard.render()
     }
     addEvent() {
-        console.log("all event here")
     }
 }

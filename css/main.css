@@ -7,6 +7,7 @@
 @import"./components/photographerdescriptioncard.css";
 @import"./components/mediacard.css";
 @import"./components/counterlike.css";
+@import"./components/modalform.css";
 
 /*header*/
 header {
@@ -119,8 +120,9 @@ main h1 {
     .header--photographer-page {
         position: static;
         padding: 40px 20px;
-    
+
     }
+
     .photographers-wrapper {
         grid-template-columns: repeat(1, auto);
         row-gap: 5px;

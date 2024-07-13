@@ -1,0 +1,97 @@
+.modal-form {
+    width: 500px;
+    padding: 20px;
+    background-color: #D3573C;
+    font-family: DM Sans;
+    position: fixed;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.modal-form h1 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.form-data {
+    width: 100%;
+}
+
+.form-data label {
+    display: block;
+    font-family: DM Sans;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--secondary-text-color-1);
+}
+
+.modal-form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.modal-form textarea {
+    width: 100%;
+    height: 142px;
+    resize: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.modal-form .btn-submit {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-form .close-popup {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-form .close-popup i {
+    font-size: 50px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .modal-form {
+        width: 100%;
+        padding: 20px 20px 80px;
+        height: 100%;
+    }
+
+    .modal-form h1 {
+        font-size: 40px;
+    }
+
+    .close-popup i {
+        font-size: 12px;
+    }
+
+    .modal-form .btn-submit {
+        margin-top: 40px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

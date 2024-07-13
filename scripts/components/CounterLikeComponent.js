@@ -7,7 +7,6 @@ class CounterLikeComponent {
     }
 
     addEvent() {
-        console.log(" event counterlikecomponent add successfully")
     }
 
     update(message) {

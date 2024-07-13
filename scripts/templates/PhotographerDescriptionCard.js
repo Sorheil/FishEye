@@ -19,14 +19,13 @@ class PhotographerDescriptionCard {
                   </div>
               </div>
   
-              <button class="cta" aria-label="Contact Me">
+              <button class="cta" aria-label="Contact Me" onclick="openModal()">
                   contactez-moi
               </button>
   
                   <img src="./../${this._photographer.portrait}" alt="${this._photographer.name}" class="photographer__image--minified">
             
           `;
-        console.log(this._photographer.portrait)
         wrapper.innerHTML = content;
         return wrapper;
     }

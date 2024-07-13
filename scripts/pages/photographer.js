@@ -40,6 +40,11 @@ async function main() {
     // Insert all media components into the DOM in one operation
     const $mediaCardWrapper = document.querySelector('.media-card-wrapper');
     $mediaCardWrapper.appendChild(fragment);
+
+    // insert modalform
+    const modalFormComponent = new ModalFormComponent();
+    document.body.appendChild(modalFormComponent._HTML);
+
 }
 
 main();

@@ -10,7 +10,6 @@ class Media {
         this._price = media.price;
         this._image = media.image ? media.image : null;
         this._video = media.video ? media.video : null;
-        console.log("hey", this._image)
 
     }
 
