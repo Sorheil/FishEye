@@ -3,38 +3,41 @@ class MediaComponent {
         this._props = new Media(media);
         const mediaCard = MediaCardFactory.createMediaCard(this._props);
         this._HTML = mediaCard.render();
+        this.observers = [];
         this.addEvent();
     }
 
     addEvent() {
         this.likeEvent();
-        this.openMedia()
     }
 
     likeEvent() {
         const $likeButton = this._HTML.querySelector('.media__like');
         const $numberlikemedia = this._HTML.querySelector('.media__number-like');
-        let numberlikemedia = parseInt($numberlikemedia.textContent, 10); // Convertit le texte en nombre entier
+        let numberlikemedia = parseInt($numberlikemedia.textContent);
 
         $likeButton.addEventListener('click', () => {
             if ($likeButton.classList.contains('unliked')) {
                 numberlikemedia += 1;
-                $numberlikemedia.textContent = numberlikemedia;
-
                 $likeButton.classList.remove('unliked');
                 $likeButton.classList.add('liked');
-            } else {
-                if (numberlikemedia > 0) {
-                    numberlikemedia -= 1;
-                    $numberlikemedia.textContent = numberlikemedia;
-                }
-
+                this.notifyObservers("incrementlike");
+            } else if ($likeButton.classList.contains('liked')) {
+                numberlikemedia -= 1;
                 $likeButton.classList.remove('liked');
                 $likeButton.classList.add('unliked');
+                this.notifyObservers("decrementlike");
             }
+            $numberlikemedia.textContent = numberlikemedia;
         });
     }
-    openMedia() {
 
+
+    addObserver(observer) {
+        this.observers.push(observer);
+    }
+
+    notifyObservers(message) {
+        this.observers.forEach(observer => observer.update(message));
     }
 }

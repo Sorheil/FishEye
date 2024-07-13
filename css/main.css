@@ -6,6 +6,7 @@
 @import "./components/btn-cta.css";
 @import"./components/photographerdescriptioncard.css";
 @import"./components/mediacard.css";
+@import"./components/counterlike.css";
 
 /*header*/
 header {
